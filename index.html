@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Random</title> 
+    <style>
+        body {
+          background-color: #1d3600;
+        }
+        </style>
+</head>
+<body>
+    <div >
+  		<h1 id="lblGreetings"
+  			style="font-family:verdana; color:#33FF68;text-align:center;font-size:100px">
+  		</h1>
+	</div>
+	<style>
+	div {
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/37e527cc-72ef-4216-ade1-2e018aa37343/d298x8f-88417215-e2f4-4424-98d4-deeb4bed3142.jpg/v1/fill/w_1131,h_707,q_70,strp/background_green_by_dereque_d298x8f-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMjAwIiwicGF0aCI6IlwvZlwvMzdlNTI3Y2MtNzJlZi00MjE2LWFkZTEtMmUwMThhYTM3MzQzXC9kMjk4eDhmLTg4NDE3MjE1LWUyZjQtNDQyNC05OGQ0LWRlZWI0YmVkMzE0Mi5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.W_oG2lo9U3EjSV6zXDyoBzzwXEn2tPT7yMFezU2_1qY');
+      }
+	</style>
+</body>
+
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet +'!</b>  <p>Do U have some?</p> <p></p>';
+</script> 
+</html>
